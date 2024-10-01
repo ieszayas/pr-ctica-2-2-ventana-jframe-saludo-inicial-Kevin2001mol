@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/0jNkISs6)
 # Práctica 2.2 JFrame saludo inicial
 
 Crea un proyecto inicial llamado *practica2-2* en la carpeta SOL de github. Utiliza *branches* para delimitar los cambios que vayas haciendo.
