@@ -6,7 +6,8 @@ public class Ventana_1 extends javax.swing.JFrame {
         initComponents();
         this.setResizable(false);//de esta forma no se redimensiona
         this.setLocationRelativeTo(null);//de esta forma se va a abrir en el centro 
-
+        
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -18,9 +19,10 @@ public class Ventana_1 extends javax.swing.JFrame {
         boton_aceptar = new javax.swing.JButton();
         label_apellido = new javax.swing.JLabel();
         apellido_usuario = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        imagen_saludo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("mi primera ventana");
         setIconImages(null);
 
         nombre_usuario.addActionListener(new java.awt.event.ActionListener() {
@@ -46,7 +48,7 @@ public class Ventana_1 extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/saluda.png"))); // NOI18N
+        imagen_saludo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagen/saluda.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -73,14 +75,14 @@ public class Ventana_1 extends javax.swing.JFrame {
                     .addComponent(label_apellido)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(46, 46, 46)
-                        .addComponent(jLabel1)))
+                        .addComponent(imagen_saludo)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(imagen_saludo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(label_nombre)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -132,7 +134,7 @@ public class Ventana_1 extends javax.swing.JFrame {
             nombre_usuario.setText("");
             return;
         }
-        javax.swing.JOptionPane.showMessageDialog(this, nombre_usuario.getText() + " " + apellido_usuario.getText());
+        javax.swing.JOptionPane.showMessageDialog(this, "Hola "+nombre_usuario.getText() + " " + apellido_usuario.getText());
         Ventana_2 entrar = new Ventana_2();//nos instanciamos el objeto que queremos que se ejecute al pulsar
 
         entrar.setDato(nombre_usuario.getText() + " " + apellido_usuario.getText());/*antes de hacer visible la ventana 2,desde el objeto ventana2 
@@ -187,7 +189,7 @@ public class Ventana_1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField apellido_usuario;
     private javax.swing.JButton boton_aceptar;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel imagen_saludo;
     private javax.swing.JLabel label_apellido;
     private javax.swing.JLabel label_nombre;
     private javax.swing.JTextField nombre_usuario;

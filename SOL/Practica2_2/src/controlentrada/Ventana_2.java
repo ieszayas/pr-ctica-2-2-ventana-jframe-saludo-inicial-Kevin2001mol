@@ -15,6 +15,7 @@ public class Ventana_2 extends javax.swing.JFrame {
         mostrar_nombre = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Segunda ventana del proyecto");
         setName("Saluda"); // NOI18N
 
         mostrar_nombre.setText("hola");
